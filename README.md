@@ -1,10 +1,10 @@
 # The Freiburger Times
 
-This project was developed within in the frame of the Front End Developer Nanodegree program at Udacity.
+This project was developed within the frame of the Front End Developer Nanodegree program at Udacity.
 
 ## Technologies & Patterns used:
 
-*	Fully responsive (starting at 240px Unihertz Jelly Pro, as fas as I know the smallest Smartphone widely available)
+* Fully responsive (starting at 240px Unihertz Jelly Pro, as fas as I know the smallest Smartphone widely available)
 * Responsive Patterns: Off Canvas, Column Drop
 * Responsive Images: showing crops for certain pictures
 * Responsive Tables: No more tables & Hidden Columns techniques
