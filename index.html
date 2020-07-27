@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Freiburger Times</title>
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/responsive.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda One">
+		<script src="js/functions.js"></script>
+	</head>
+	<body>
+
+		<a id="menu">
+			<img class="hamburguer" src="img/menu/hamburguer.webp">
+		</a>
+
+		<header class="header">
+
+			<div class="header__inner">
+				<img class="header__logo" src="img/header/news.png" alt="The Freiburger Times logo">
+				<h1 class="header__title">The Freiburger Times</h1>
+			</div>
+		</header>
+
+		<div class="main">
+
+			<nav id="drawer" class="nav">
+				<a id="close_menu">
+					<img class="x" src="img/menu/x.webp">
+				</a>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#news">News</a></li>
+					<li class="nav__item"><a href="#sports">Sports</a></li>
+					<li class="nav__item"><a href="#weather">Weather</a></li>
+					<li class="nav__item"><a href="#credits">Credits</a></li>
+				</ul>
+			</nav>
+
+			<main>
+				<section class="content">
+					<section class="hero">
+						<article class="description">
+							<h2>Absolutely astonishing breaking news!</h2>
+							<p>Organic raw denim Vice keffiyeh lomo Kickstarter art lomo
+								Kickstarter art four loko. Organic raw denim Vice keffiyeh lomo
+							Kickstarter art lomo Kickstarter art four loko.</p>
+						</article>
+					</section>
+
+					<section class="news top-news">
+						<h3 class="news__title">Top news</a></h3>
+						<ul>
+							<li class="top-news__item">
+								<a href="#">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.</a>
+							</li>
+							<li class="top-news__item">
+								<a href="#">Squid lomo Kickstarter art lomo Kickstarter art party cronut scenester.</a>
+							</li>
+							<li class="top-news__item">
+								<a href="#">Organic raw denim lomo Kickstarter art Vice keffiyeh four loko.</a>
+							</li>
+							<li class="top-news__item">
+								<a href="#">Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko.</a>
+							</li>
+						</ul>
+					</section>
+
+					<section id="sports" class="scores">
+						<h3 class="sports__title">Sports</a></h3>
+						<table class="scores__table">
+							<thead>
+								<tr>
+									<th class="scores__date">date</th>
+									<th class="scores__location">stadium</th>
+									<th>team</th>
+									<th colspan="2">score</th>
+									<th>team</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-title="date" class="scores__date">Friday</td>
+									<td data-title="stadium" class="scores__location">Opel Arena</td>
+									<td>Leverkusen</td>
+									<td>2</td>
+									<td class="winner">3</td>
+									<td class="winner">RB Leipzig</td>
+								</tr>
+								<tr>
+									<td data-title="date" class="scores__date">Friday</td>
+									<td data-title="stadium" class="scores__location">Allianz Arena</td>
+									<td class="winner">Mainz</td>
+									<td class="winner">0</td>
+									<td>1</td>
+									<td>Augsburg</td>
+								</tr>
+								<tr>
+									<td data-title="date" class="scores__date">Saturday</td>
+									<td data-title="stadium" class="scores__location">Veltins-Arena</td>
+									<td class="winner">SC Freiburg</td>
+									<td class="winner">1</td>
+									<td>0</td>
+									<td>St. Pauli</td>
+								</tr>
+								<tr>
+									<td data-title="date" class="scores__date">Sunday</td>
+									<td data-title="stadium" class="scores__location">Signal Iduna Park</td>
+									<td>Dortmund</td>
+									<td>1</td>
+									<td class="winner">0</td>
+									<td class="winner">Hoffenheim</td>
+								</tr>
+								<tr>
+									<td data-title="date" class="scores__date">Sunday</td>
+									<td data-title="stadium" class="scores__location">Weserstadion</td>
+									<td class="winner">Werder</td>
+									<td class="winner">6</td>
+									<td>2</td>
+									<td>Heidenheim</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</section>
+
+					<section id="weather" class="weather">
+						<h3 class="weather__title">Weather</a></h3>
+						<span class="weather__location">Freiburg, Germany</span>
+						<span class="weather__desc">Mostly Sunny</span>
+						<div class="weather__today">
+							<img class="weather__today__image" src="img/weather/weather.png" alt="icon of a partially cloudy day">
+							<div class="weather__today__temp">
+								<span class="weather__today__temp__num">13</span>
+								<span class="weather__today__temp__deg">&deg;C</span>
+	          				</div>
+          				</div>
+						<ul class="weather__next">
+							<li class="weather__next__item">
+								<span>Mon</span>
+								<img class="weather__next__image" src="img/weather/sunny.png" alt="icon of a sunny day">
+								<span>13°</span>
+							</li><li class="weather__next__item">
+								<span>Tue</span>
+								<img class="weather__next__image" src="img/weather/cloudy.png" alt="icon of a cloudy day">
+								<span>23°</span>
+							</li><li class="weather__next__item">
+								<span>Wed</span>
+								<img class="weather__next__image" src="img/weather/cloudy.png" alt="icon of a cloudy day">
+								<span>16°</span>
+							</li><li class="weather__next__item">
+								<span>Thu</span>
+								<img class="weather__next__image" src="img/weather/rain.png" alt="icon of a rainy day">
+								<span>30°</span>
+							</li><li class="weather__next__item">
+								<span>Fri</span>
+								<img class="weather__next__image" src="img/weather/sunny.png" alt="icon of a sunny day">
+								<span>26°</span>
+							</li>
+						</ul>
+					</section>
+
+					<section id= "news" class="news recent-news">
+						<h3 class="news__title">Latest news</h3>
+						<ul>
+							<li class="snippet">
+								<h4 class="snippet__title"><a href="#">Gastropub distillery Marfa farm-to-table</a></h4>
+
+								<picture>
+								  <source media="(min-width: 500px) and (max-width: 986px)" srcset="img/news/protests.jpg">
+								  <img class="snippet__thumbnail" src="img/news/crops/protests_crop.jpg" alt="picture of a police officer in the middle of a protest">
+								</picture>
+								<p class="snippet__text">Gastropub distillery Marfa farm-to-table, Etsy Truffaut
+									fingerstache.
+									Squid lomo Kickstarter art party cronut scenester. Organic
+									raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party
+									cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice
+									keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester.
+									Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid
+									lomo Kickstarter art party cronut scenester. Organic raw denim Vice
+									keffiyeh four loko.
+								</p>
+							</li>
+							<li class="snippet">
+								<h4 class="snippet__title"><a href="#">Organic raw keffiyeh four loko</a></h4>
+								<img class="snippet__thumbnail" src="img/news/blacklivesmatter.jpg" alt="picture of graffiti depicting a blak man surrounded by the words Black Lives Matter">
+								<p class="snippet__text">Vice keffiyeh four loko. Squid lomo Kickstarter art
+									party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice
+									keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester.
+									Organic raw denim Vice loko.
+								</p>
+							</li>
+							<li class="snippet">
+								<h4 class="snippet__title"><a href="#">Kickstarter art party cronut scenester</a></h4>
+
+								<picture>
+								  <source media="(min-width: 500px) and (max-width: 986px)" srcset="img/news/business.jpg">
+								  <img class="snippet__thumbnail" src="img/news/crops/business_crop.jpg" alt="side picture of a business man walking on a shadowy street">
+								</picture>
+
+								<p class="snippet__text">Gastropub distillery Marfa farm-to-table, Etsy Truffaut
+									fingerstache.
+									Squid lomo Kickstarter art party cronut scenester. Organic
+									raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party
+									cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice
+									keffiyeh four loko.
+								</p>
+							</li>
+							<li class="snippet">
+								<h4 class="snippet__title"><a href="#">Squid lomo Kickstarter art party cronut</a></h4>
+								<img class="snippet__thumbnail" src="img/news/tech.jpg" alt="picture of electronic panels and cables">
+								<p class="snippet__text">Gastropub distillery Marfa farm-to-table, Etsy Truffaut
+									fingerstache.
+									Squid lomo Kickstarter art party cronut scenester. Organic
+									raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party
+									cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice
+									keffiyeh four loko.
+								</p>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<footer>
+					<ul>
+						<li>
+							<a href="#"><img class="img_twitter" src="img/social/twitter.svg" alt="Follow us on Twitter"/></a>
+						</li>
+						<li>
+							<a href="#"><img class="img_rss" src="img/social/rss.svg" alt="RSS feed"/></a>
+						</li>
+						<li>
+							<a href="#"><img class="img_contactus" src="img/social/contactus.svg" alt="Contact us"/>
+							</a>
+					</li>
+					</ul>
+					<p id="credits">
+						<ul class= "footer__credits">
+							Credits:
+							<li><span class="footer__credits__title">Programming: </span>Víctor Isabel-Bueno;</li>
+							<li><span class="footer__credits__title">Base html and CSS: </span><a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011">Udacity Front End Web Developer Nanodegree (Home Town App)</a>; </li>
+							<li><span class="footer__credits__title">Pictures:</span>
+								<a href="https://unsplash.com/photos/E-YvDvwafuI">Josh Olalde</a>,
+								<a href="https://unsplash.com/photos/T1u5YP4blL4">Randy Colas</a>,
+								<a href="https://unsplash.com/photos/CwVL-IX_RdQ">Darian Garcia</a>,
+								<a href="https://unsplash.com/photos/SG5tASj-mGc">Nicola Fioravanti</a>,
+								<a href="https://unsplash.com/photos/ImcUkZ72oUs">Israel Palacio</a>;
+							</li>
+							<li>
+								<span class="footer__credits__title">Color Palette:</span>
+								<a href="https://www.color-hex.com/color-palette/18538">Jaxynawesome</a>;
+							</li>
+							<li>
+								<span class="footer__credits__title">Icons:</span>
+
+								<a href="https://www.pinterest.com/pin/814307176358482169/">Hamburguer</a>,
+								<a href="https://www.pngwave.com/png-clip-art-vgbse">Main</a>,
+								<a href="https://about.twitter.com/en_us/company/brand-resources.html">Twitter</a>,
+								<a href="https://www.iconfinder.com/icons/3204051/blog_feed_news_online_rss_web_xml_icon">Feed</a>,
+								<a href="https://www.onlinewebfonts.com/icon/440190">Contact Us</a>,
+								<a href="https://www.onlinewebfonts.com/icon/549039">Back to Top</a>;
+							</li>
+							<li>
+								<span class="footer__credits__title">Fonts:</span>
+								<a href="https://fonts.google.com/specimen/Pacifico?category=Handwriting#license">Pacifico</a>
+							</li>
+						</ul>
+					</p>
+				</footer>
+			</main>
+
+			<a id="backtotop">
+				<img class="backtotop" src="img/menu/backtotop.png">
+			</a>
+
+		</body>
+	</div>
+</html>

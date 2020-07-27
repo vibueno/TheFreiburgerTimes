@@ -1,0 +1,478 @@
+/*
+Sizes in this page are optimized for mini smarphones.
+We use the file responsive.css to build up on this and
+make the page look good on bigger devices too
+*/
+img, embeb, object, video {
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 13px;
+  color: #424242;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+  width: 100%;
+  -webkit-box-shadow: inset 200px 0px 85px -5px rgba(185, 164, 81, 1);
+  -moz-box-shadow: inset 200px 0px 85px -5px rgba(185, 164, 81, 1);
+  box-shadow: inset 200px 0px 85px -5px rgba(185, 164, 81, 1);
+  line-height: 24px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header, footer, section, article, div {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+article.description {
+  font-size: 1.2em;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+.header {
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.header__logo {
+  height: 60%;
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  margin: 12px 0 0 0;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 2em;
+  margin: 0.15em 0 0.3em 0;
+  font-family: "Merienda One";
+  text-shadow: 4px 4px 4px #aaa;
+  color: #766d4e;
+}
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+.nav {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding: 0 0 5px 0;
+  z-index: 10;
+  top: 0;
+  background-color: #78704f;
+  opacity: 0.95;
+  box-shadow: 0 2px 5px rgba(118, 109, 78, 0.7);
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 800;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  color: #212121;
+}
+
+/*
+ *
+ * Main
+ *
+ */
+main {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+.content {
+  box-shadow: 0 2px 5px rgba(118, 109, 78, 0.7);
+}
+
+/*
+ *
+ * Hero
+ *
+ */
+.hero {
+  height: 100%;
+  min-height: 300px;
+  width: auto;
+  position: relative;
+  background-image: url("../img/news/newyork.jpg");
+  background-size: cover;
+}
+
+.hero article {
+  box-sizing: border-box;
+  background-color: rgba(171, 158, 115, 0.8);
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+
+/*
+ *
+ * Top News
+ *
+ */
+.top-news {
+  width: 100%;
+  height: auto;
+  border-bottom: 0;
+  padding: 1em;
+}
+
+.news__title {
+  padding: 3px 0 3px 5px;
+}
+
+.top-news__item {
+  border-bottom: 1px solid rgba(118, 109, 78, 0.3);
+  padding: 1em 0;
+  line-height: 19.2px;
+  font-size: 1.2em;
+}
+
+.top-news__item:last-child {
+  border-bottom: none;
+}
+
+.top-news__item a {
+  text-decoration: none;
+  color: #666;
+}
+
+.top-news__item a:hover, .top-news__item a:active {
+  text-decoration: underline;
+}
+
+/*
+ *
+ * Sport Scores
+ *
+ */
+.sports__title {
+  margin: 0 0 5px 0;
+  padding: 3px 0 3px 5px;
+}
+
+.scores {
+  width: 100%;
+  float: left;
+  padding: 1em;
+}
+
+.scores__table {
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E0E0E0;
+  font-size: 0.9em;
+}
+
+.scores__table th, .scores__table td {
+  padding: 0.1em;
+}
+
+.scores__table th {
+  color: #fff;
+  font-weight: bold;
+  background-color: #d6bc53;
+  opacity: 0.80;
+  text-transform: uppercase;
+}
+
+.scores__table tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+.scores__table tr:nth-child(even) td {
+  background-color: #f2f0c6;
+}
+
+.scores__table td.winner {
+  font-weight: bold;
+}
+
+.scores__table td:nth-child(4) {
+  text-align: right;
+}
+
+.scores__table td:nth-child(3),
+.scores__table td:nth-child(6) {
+  text-align: center;
+}
+
+.scores__date, .scores__location {
+  display: none;
+}
+
+/*
+ *
+ * Weather
+ *
+ */
+.weather {
+  width: 100%;
+  padding: 1em;
+}
+
+.weather__title {
+  margin: 0 0 5px 0;
+  padding: 3px 0 3px 5px;
+}
+
+.weather__location {
+  display: block;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.weather__desc {
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+}
+
+.weather__today {
+  width: 100%;
+  align-items: center;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.weather__today__image {
+  min-width: 100px;
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.weather__today__temp {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.weather__today__temp__num {
+  font-size: 1.8em;
+}
+
+.weather__today__temp__deg {
+  font-size: 1.3em;
+}
+
+.weather__next {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+.weather__next__item {
+  text-align: center;
+  width: 20%;
+  height: auto;
+  font-size: 1.1em;
+}
+
+.weather__next__item span {
+  display: block;
+}
+
+.weather__next__image {
+  width: 75%;
+  max-width: 95px;
+}
+
+/*
+ *
+ * Latest news
+ *
+ */
+.recent-news {
+  clear: both;
+  padding: 1em;
+}
+
+.snippet {
+  clear: both;
+  margin: 10px 0 20px;
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+.snippet__title {
+  margin: 0 0 10px 0;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.snippet__title a {
+  text-decoration: none;
+  color: #666;
+}
+
+.snippet__title a:hover, .snippet__title a:active {
+  text-decoration: underline;
+}
+
+.snippet__thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 10px 10px 0;
+}
+
+.snippet__thumbnail:hover {
+  opacity: 0.7;
+}
+
+.snippet__text {
+  margin: 0 0 0 0;
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+footer {
+  padding: 1em;
+  width: 100%;
+  font-size: 1.1em;
+}
+
+footer ul {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(118, 109, 78, 0.3);
+  padding: 0 0 10px 0;
+}
+
+footer li {
+  display: inline;
+  margin: 0 0.5em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer__credits {
+  font-size: 0.8em;
+  margin: 10px 0 0 0;
+  padding: 0 0 10px 0;
+}
+
+.footer__credits__title {
+  font-weight: 600;
+}
+
+.img_twitter {
+  width: 30px;
+  height: auto;
+}
+
+.img_rss {
+  width: 32px;
+  height: auto;
+}
+
+.img_contactus {
+  width: 30px;
+  height: auto;
+}
+
+.backtotop {
+  width: 40px;
+  height: auto;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 31;
+  border-radius: 5px;
+}

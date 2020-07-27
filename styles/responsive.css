@@ -1,0 +1,288 @@
+/*Hamburguer menu*/
+@media screen and (max-width:700px) {
+	.hamburguer {
+		width: 40px;
+		height: auto;
+		position: fixed;
+		left: 15px;
+		top: 15px;
+		z-index: 30;
+		border-radius: 5px;
+	}
+
+	.x {
+		width: 40px;
+		height: auto;
+		position: relative;
+		margin: 15px 15px 15px 15px;
+		z-index: 30;
+	}
+
+	nav {
+		height: 100%;
+		position: fixed;    /* This trasform moves the drawer off canvas. */
+		-webkit-transform: translate(-600px, 0);
+		transform: translate(-600px, 0);    /* Optionally, we animate the drawer. */
+		transition: transform 0.3s ease;
+	}
+
+	nav.open {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+
+}
+
+/*Size increase*/
+@media screen and (min-width:301px) {
+	.scores__table {
+		font-size: 1em;
+	}
+
+	.weather__next__item {
+		font-size: 1.2em;
+	}
+
+}
+
+/*Size increase*/
+@media screen and (min-width:366px) {
+	.news__title, .sports__title, .weather__title {
+		font-size: 1.3em;
+	}
+
+	.header__title {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	.weather__today__temp__num {
+		font-size: 2.5em;
+	}
+
+	.weather__today__temp__deg {
+		font-size: 2.0em;
+	}
+
+}
+
+/*Size increase*/
+@media screen and (min-width:451px) {
+	#drawer {
+		width: 80%;
+	}
+
+	.weather__next__item {
+		font-size: 1.5em;
+	}
+
+	.snippet {
+		font-size: 1.5em;
+	}
+
+	.img_twitter {
+		width: 35px;
+	}
+
+	.img_rss {
+		width: 37px;
+	}
+
+	.img_contactus {
+		width: 38px;
+	}
+
+}
+
+/*scores table columns*/
+@media screen and (max-width:400px) {
+
+	.scores__table, .scores__table thead, .scores__table tbody, .scores__table th, .scores__table tr {
+		display: block;
+	}
+
+	.scores__table td {
+		display: flex;
+		align-items: top;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.scores__table thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.scores__table tr {
+		border: 1px solid #ccc;
+	}
+
+	.scores__table td {
+
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+		padding-top: 7px;
+		white-space: normal;
+		text-align: left;
+		min-height: 15px;
+	}
+
+	.scores__table td:before {
+
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		text-align: left;
+		font-weight: bold;
+		/*
+		Label the data
+		*/
+		content: attr(data-title);
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+	}
+
+}
+
+@media screen and (min-width:501px) {
+	.scores__table {
+		font-size: 1.4em;
+	}
+
+}
+
+/*Returning to normal menu and size increase*/
+@media screen and (min-width:701px) {
+
+	/*Menu*/
+	.hamburguer, .x {
+		display: none !important;
+	}
+
+	.nav {
+		top: 0;
+		position: sticky;s
+		padding: 0;
+	}
+
+	.nav__item {
+		display: inline-block;
+		font-size: 1.75em;
+		width: 24%;
+		margin: 0;
+		padding: 5px;
+	}
+
+	/*Size increase*/
+	article.description {
+		font-size: 1.5em;
+	}
+
+	.news__title {
+		font-size: 2em;
+	}
+
+	.top-news__item {
+		font-size: 1.7em;
+	}
+
+	.sports__title {
+		font-size: 2em;
+	}
+
+	.scores__table {
+		font-size: 1.3em;
+	}
+
+	.scores__location {
+		display: table-cell;
+	}
+
+	.scores__table td:nth-child(2){
+		text-align: center;
+	}
+
+	.weather__title {
+		font-size: 2em;
+	}
+
+	.weather__next__item {
+		font-size: 1.9em;
+	}
+
+	.snippet {
+		font-size: 1.7em;
+	}
+
+	.snippet__text {
+		display: inline;
+	}
+
+	.img_twitter {
+		width: 50px;
+	}
+
+	.img_rss {
+		width: 52px;
+	}
+
+	.img_contactus {
+		width: 48px;
+	}
+
+}
+
+/*size increase*/
+
+/*Column "undrop"*/
+@media screen and (min-width:931px) {
+	.scores {
+		width: 60%;
+		display: block;
+		padding: 1em 0.5em 1em 1em;
+	}
+
+	.scores__table {
+		font-size: 1.6em;
+	}
+
+	.scores__table td {
+		padding: 0.4em 0 0.4em 0;
+	}
+
+	.sports__title {
+		padding: 3px 0 3px 5px;
+		box-sizing: border-box;
+	}
+
+	.weather {
+		width: 40%;
+		padding: 1em 1em 1em 0.5em;
+	}
+
+	.weather__today__image {
+		max-width: 100px;
+	}
+
+	.snippet__thumbnail {
+		float: left;
+		max-width: 250px;
+	}
+
+	.scores__location {
+		display: none;
+	}
+
+}
