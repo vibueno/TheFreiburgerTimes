@@ -8,17 +8,24 @@ window.onload=function(){
 	const hamburguer = document.querySelector('.hamburguer');
 	const x = document.querySelector('.x');
 	const menu_entries = document.querySelectorAll('.nav__item > a');
-	const backtotop = document.querySelector('#backtotop');
+	const backtotop = document.querySelector('.backtotop');
 
 	let headerPaddingRight = header.style.paddingRight === ''?'0':header.style.paddingRight;
 	let mainPaddingRight = main.style.paddingRight === ''?'0':main.style.paddingRight;
 
 	function setBacktotopVisibility(){
 		if (((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight/1.75) && (!drawer.classList.contains('open'))) {
-			backtotop.style.display = 'block';
+			window.setTimeout( function() {
+				backtotop.classList.remove('backtotop__hidden');
+				backtotop.classList.add('backtotop__visible');
+			}, 100);
+
 		}
 		else{
-			backtotop.style.display = 'none';
+			window.setTimeout( function() {
+				backtotop.classList.remove('backtotop__visible');
+				backtotop.classList.add('backtotop__hidden');
+			}, 100);
 		};
 	}
 

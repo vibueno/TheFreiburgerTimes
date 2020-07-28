@@ -12,7 +12,7 @@ This project was developed within the frame of the Front End Developer Nanodegre
 ## Main features:
 * Mobile navigation menu (hamburguer) with no background scrolling
 * Sticky menu on bigger viewports
-* Back to top button with soft scrolling
+* Back to top button with soft scrolling & fade-in & out effect
 
 ## Browser compatibility:
 * Chrome 84.0.4147.89
