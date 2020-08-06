@@ -106,7 +106,6 @@
 
 	.scores__table td {
 		display: flex;
-		align-items: top;
 	}
 
 	/* Hide table headers (but not display: none;, for accessibility) */
@@ -173,7 +172,7 @@
 
 	.nav {
 		top: 0;
-		position: sticky;s
+		position: sticky;
 		padding: 0;
 	}
 

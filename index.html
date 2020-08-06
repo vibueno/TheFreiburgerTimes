@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>The Freiburger Times</title>
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/responsive.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda One">
-		<script src="js/functions.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda%20One">
+		<script src="js/app.js"></script>
 	</head>
 	<body>
 
 		<a id="menu">
-			<img class="hamburguer" src="img/menu/hamburguer.webp">
+			<img class="hamburguer" src="img/menu/hamburguer.webp" alt="Hamburger icon">
 		</a>
 
 		<header class="header">
@@ -29,7 +28,7 @@
 
 			<nav id="drawer" class="nav">
 				<a id="close_menu">
-					<img class="x" src="img/menu/x.webp">
+					<img class="x" src="img/menu/x.webp" alt="Close icon">
 				</a>
 				<ul class="nav__list">
 					<li class="nav__item"><a href="#news">News</a></li>
@@ -51,7 +50,7 @@
 					</section>
 
 					<section class="news top-news">
-						<h3 class="news__title">Top news</a></h3>
+						<h3 class="news__title">Top news</h3>
 						<ul>
 							<li class="top-news__item">
 								<a href="#">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.</a>
@@ -69,7 +68,7 @@
 					</section>
 
 					<section id="sports" class="scores">
-						<h3 class="sports__title">Sports</a></h3>
+						<h3 class="sports__title">Sports</h3>
 						<table class="scores__table">
 							<thead>
 								<tr>
@@ -127,7 +126,7 @@
 					</section>
 
 					<section id="weather" class="weather">
-						<h3 class="weather__title">Weather</a></h3>
+						<h3 class="weather__title">Weather</h3>
 						<span class="weather__location">Freiburg, Germany</span>
 						<span class="weather__desc">Mostly Sunny</span>
 						<div class="weather__today">
@@ -233,13 +232,19 @@
 						<li>
 							<a href="#"><img class="img_contactus" src="img/social/contactus.svg" alt="Contact us"/>
 							</a>
-					</li>
+						</li>
 					</ul>
-					<p id="credits">
+					<div id="credits">
 						<ul class= "footer__credits">
-							Credits:
-							<li><span class="footer__credits__title">Programming: </span>Víctor Isabel-Bueno;</li>
-							<li><span class="footer__credits__title">Base HTML and CSS: </span><a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011">Udacity Front End Web Developer Nanodegree (Home Town App)</a>; </li>
+							<li>
+								Credits:
+								<span class="footer__credits__title">Programming: </span>Víctor Isabel-Bueno;
+							</li>
+							<li>
+								<span class="footer__credits__title">Base HTML and CSS: </span>
+								<a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011">Udacity Front End Web Developer Nanodegree (Home Town App)
+								</a>;
+							</li>
 							<li><span class="footer__credits__title">Pictures:</span>
 								<a href="https://unsplash.com/photos/E-YvDvwafuI">Josh Olalde</a>,
 								<a href="https://unsplash.com/photos/T1u5YP4blL4">Randy Colas</a>,
@@ -266,14 +271,14 @@
 								<a href="https://fonts.google.com/specimen/Pacifico?category=Handwriting#license">Pacifico</a>
 							</li>
 						</ul>
-					</p>
+					</div>
 				</footer>
 			</main>
+		</div>
 
-			<a id="backtotop">
-				<img class="backtotop backtotop__hidden" src="img/menu/backtotop.png">
-			</a>
+		<a id="backtotop">
+			<img class="backtotop backtotop__hidden" src="img/menu/backtotop.png" alt="Back to top icon">
+		</a>
 
-		</body>
-	</div>
+	</body>
 </html>
