@@ -30,28 +30,28 @@
 		-webkit-transform: translate(0, 0);
 		transform: translate(0, 0);
 	}
-
 }
 
 /*Size increase*/
 @media screen and (min-width:301px) {
-	.scores__table {
+	.scores-table {
 		font-size: 1em;
 	}
 
-	.weather__next__item {
+	.weather-next-item {
 		font-size: 1.2em;
 	}
-
 }
 
 /*Size increase*/
 @media screen and (min-width:366px) {
-	.news__title, .sports__title, .weather__title {
+	.news-title,
+	.sports-title,
+	.weather-title {
 		font-size: 1.3em;
 	}
 
-	.header__title {
+	.header-title {
 		font-size: 3em;
 	}
 
@@ -59,14 +59,13 @@
 		font-size: 1.5em;
 	}
 
-	.weather__today__temp__num {
+	.weather-today-temp-num {
 		font-size: 2.5em;
 	}
 
-	.weather__today__temp__deg {
+	.weather-today-temp-deg {
 		font-size: 2.0em;
 	}
-
 }
 
 /*Size increase*/
@@ -75,7 +74,7 @@
 		width: 80%;
 	}
 
-	.weather__next__item {
+	.weather-next-item {
 		font-size: 1.5em;
 	}
 
@@ -83,43 +82,45 @@
 		font-size: 1.5em;
 	}
 
-	.img_twitter {
+	.img-twitter {
 		width: 35px;
 	}
 
-	.img_rss {
+	.img-rss {
 		width: 37px;
 	}
 
-	.img_contactus {
+	.img-contactus {
 		width: 38px;
 	}
-
 }
 
 /*scores table columns*/
 @media screen and (max-width:400px) {
-
-	.scores__table, .scores__table thead, .scores__table tbody, .scores__table th, .scores__table tr {
+	.scores-table,
+	.scores-table thead,
+	.scores-table tbody,
+	.scores-table th,
+	.scores-table tr {
 		display: block;
 	}
 
-	.scores__table td {
+	.scores-table td {
 		display: flex;
 	}
 
 	/* Hide table headers (but not display: none;, for accessibility) */
-	.scores__table thead tr {
+	.scores-table thead tr {
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
 	}
 
-	.scores__table tr {
+	.scores-table tr {
 		border: 1px solid #ccc;
 	}
 
-	.scores__table td {
+	.scores-table td {
 
 		/* Behave  like a "row" */
 		border: none;
@@ -132,7 +133,7 @@
 		min-height: 15px;
 	}
 
-	.scores__table td:before {
+	.scores-table td:before {
 
 		/* Now like a table header */
 		position: absolute;
@@ -152,21 +153,19 @@
 		display: flex;
 		align-items: center;
 	}
-
 }
 
 @media screen and (min-width:501px) {
-	.scores__table {
+	.scores-table {
 		font-size: 1.4em;
 	}
-
 }
 
 /*Returning to normal menu and size increase*/
 @media screen and (min-width:701px) {
-
 	/*Menu*/
-	.hamburguer, .x {
+	.hamburguer,
+	.x {
 		display: none !important;
 	}
 
@@ -176,7 +175,7 @@
 		padding: 0;
 	}
 
-	.nav__item {
+	.nav-item {
 		display: inline-block;
 		font-size: 1.75em;
 		width: 24%;
@@ -189,35 +188,35 @@
 		font-size: 1.5em;
 	}
 
-	.news__title {
+	.news-title {
 		font-size: 2em;
 	}
 
-	.top-news__item {
+	.top-news-item {
 		font-size: 1.7em;
 	}
 
-	.sports__title {
+	.sports-title {
 		font-size: 2em;
 	}
 
-	.scores__table {
+	.scores-table {
 		font-size: 1.3em;
 	}
 
-	.scores__location {
+	.scores-location {
 		display: table-cell;
 	}
 
-	.scores__table td:nth-child(2){
+	.scores-table td:nth-child(2){
 		text-align: center;
 	}
 
-	.weather__title {
+	.weather-title {
 		font-size: 2em;
 	}
 
-	.weather__next__item {
+	.weather-next-item {
 		font-size: 1.9em;
 	}
 
@@ -225,22 +224,21 @@
 		font-size: 1.7em;
 	}
 
-	.snippet__text {
+	.snippet-text {
 		display: inline;
 	}
 
-	.img_twitter {
+	.img-twitter {
 		width: 50px;
 	}
 
-	.img_rss {
+	.img-rss {
 		width: 52px;
 	}
 
-	.img_contactus {
+	.img-contactus {
 		width: 48px;
 	}
-
 }
 
 /*size increase*/
@@ -253,15 +251,15 @@
 		padding: 1em 0.5em 1em 1em;
 	}
 
-	.scores__table {
+	.scores-table {
 		font-size: 1.6em;
 	}
 
-	.scores__table td {
+	.scores-table td {
 		padding: 0.4em 0 0.4em 0;
 	}
 
-	.sports__title {
+	.sports-title {
 		padding: 3px 0 3px 5px;
 		box-sizing: border-box;
 	}
@@ -271,17 +269,16 @@
 		padding: 1em 1em 1em 0.5em;
 	}
 
-	.weather__today__image {
+	.weather-today-image {
 		max-width: 100px;
 	}
 
-	.snippet__thumbnail {
+	.snippet-thumbnail {
 		float: left;
 		max-width: 250px;
 	}
 
-	.scores__location {
+	.scores-location {
 		display: none;
 	}
-
 }
