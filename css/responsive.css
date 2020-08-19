@@ -4,16 +4,19 @@
 		width: 40px;
 		height: auto;
 		position: fixed;
+		cursor: pointer;
 		left: 15px;
 		top: 15px;
 		z-index: 30;
 		border-radius: 5px;
+
 	}
 
 	.x {
 		width: 40px;
 		height: auto;
 		position: relative;
+		cursor: pointer;
 		margin: 15px 15px 15px 15px;
 		z-index: 30;
 	}

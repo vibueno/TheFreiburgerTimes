@@ -491,6 +491,7 @@ footer a {
   right: 15px;
   z-index: 31;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .backtotop-visible {

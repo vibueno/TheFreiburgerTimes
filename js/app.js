@@ -9,6 +9,8 @@ window.onload=function(){
 	const x = document.querySelector(".x");
 	const menu_entries = document.querySelectorAll(".nav__item > a");
 	const backtotop = document.querySelector(".backtotop");
+	const backtotopClassVisible = "backtotop-visible";
+	const backtotopClassHidden = "backtotop-hidden";
 
 	let headerPaddingRight = header.style.paddingRight === ""?"0":header.style.paddingRight;
 	let mainPaddingRight = main.style.paddingRight === ""?"0":main.style.paddingRight;
@@ -16,15 +18,15 @@ window.onload=function(){
 	function setBacktotopVisibility(){
 		if (((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight/1.75) && (!drawer.classList.contains("open"))) {
 			window.setTimeout( function() {
-				backtotop.classList.remove("backtotop__hidden");
-				backtotop.classList.add("backtotop__visible");
+				backtotop.classList.remove(backtotopClassHidden);
+				backtotop.classList.add(backtotopClassVisible);
 			}, 100);
 
 		}
 		else{
 			window.setTimeout( function() {
-				backtotop.classList.remove("backtotop__visible");
-				backtotop.classList.add("backtotop__hidden");
+				backtotop.classList.remove(backtotopClassVisible);
+				backtotop.classList.add(backtotopClassHidden);
 			}, 100);
 		};
 	}
