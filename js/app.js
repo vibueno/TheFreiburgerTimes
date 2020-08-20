@@ -16,7 +16,7 @@ window.onload=function(){
 	let mainPaddingRight = main.style.paddingRight === ""?"0":main.style.paddingRight;
 
 	function setBacktotopVisibility(){
-		if (((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight/1.75) && (!drawer.classList.contains("open"))) {
+		if (((window.innerHeight + window.pageYOffset) >= (document.body.offsetHeight/1.75)) && (!drawer.classList.contains("open"))) {
 			window.setTimeout( function() {
 				backtotop.classList.remove(backtotopClassHidden);
 				backtotop.classList.add(backtotopClassVisible);

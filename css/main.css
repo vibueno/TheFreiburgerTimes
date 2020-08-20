@@ -455,11 +455,15 @@ footer li {
 
 footer a {
   text-decoration: none;
-  color: #333;
+  color: #666046;
+}
+
+footer a:hover {
+	color: #ab9b5a;
 }
 
 .footer-credits {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin: 10px 0 0 0;
   padding: 0 0 10px 0;
 }
