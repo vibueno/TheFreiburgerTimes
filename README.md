@@ -7,6 +7,7 @@
 - [Features](#features)
 - [Compatibility](#compatibility)
 - [Tests](#tests)
+- [Validations](#validations)
 
 ## Description
 This project was developed within the frame of the Front End Developer Nanodegree program at Udacity.
@@ -38,3 +39,6 @@ To be tested on IE and Edge
 ## Tests
 * Desktop computer + Developer Tools
 * Uniherz Jelly Pro
+
+## Validations
+![Valid CSS!](http://jigsaw.w3.org/css-validator/images/vcss)
