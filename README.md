@@ -12,6 +12,10 @@
 ## Description
 This project was developed within the frame of the Front End Developer Nanodegree program at Udacity.
 
+## Live
+
+For a live version of The Freiburger Times, visit its [GitHub Pages Link](https://vibueno.github.io/thefreiburgertimes).
+
 ## Libraries
 No libraries have been used for this problem. Only pure and direct javascript
 
