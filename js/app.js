@@ -28,7 +28,7 @@ window.onload=function(){
 				backtotop.classList.remove(backtotopClassVisible);
 				backtotop.classList.add(backtotopClassHidden);
 			}, 100);
-		};
+		}
 	}
 
 	function openMenu(){
@@ -86,13 +86,13 @@ window.onload=function(){
 		menu_entry.addEventListener("click", function() {
 			closeMenu();
 		});
-	};
+	}
 
 	backtotop.addEventListener("click", function() {
 		scroll(0,0);
 	});
 
-	window.addEventListener("scroll", function(e) {
+	window.addEventListener("scroll", function() {
 		setBacktotopVisibility();
 	});
-}
+};
