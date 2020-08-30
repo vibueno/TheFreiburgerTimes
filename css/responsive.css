@@ -1,6 +1,11 @@
-/*Hamburguer menu*/
+/**
+ *
+ * Hamburguer menu
+ *
+ */
+
 @media screen and (max-width:700px) {
-	.hamburguer {
+	.hamburger {
 		width: 40px;
 		height: auto;
 		position: fixed;
@@ -35,7 +40,12 @@
 	}
 }
 
-/*Size increase*/
+/**
+ *
+ * Size increase
+ *
+ */
+
 @media screen and (min-width:301px) {
 	.scores-table {
 		font-size: 1em;
@@ -46,7 +56,12 @@
 	}
 }
 
-/*Size increase*/
+/**
+ *
+ * Size increase
+ *
+ */
+
 @media screen and (min-width:366px) {
 	.news-title,
 	.sports-title,
@@ -71,7 +86,12 @@
 	}
 }
 
-/*Size increase*/
+/**
+ *
+ * Size increase
+ *
+ */
+
 @media screen and (min-width:451px) {
 	#drawer {
 		width: 80%;
@@ -98,7 +118,12 @@
 	}
 }
 
-/*scores table columns*/
+/**
+ *
+ * Scores table columns
+ *
+ */
+
 @media screen and (max-width:400px) {
 	.scores-table,
 	.scores-table thead,
@@ -112,7 +137,7 @@
 		display: flex;
 	}
 
-	/* Hide table headers (but not display: none;, for accessibility) */
+	/*Hides table headers (without using display: none; for accessibility)*/
 	.scores-table thead tr {
 		position: absolute;
 		top: -9999px;
@@ -148,9 +173,7 @@
 		white-space: nowrap;
 		text-align: left;
 		font-weight: bold;
-		/*
-		Label the data
-		*/
+		/*Label the data*/
 		content: attr(data-title);
 		text-transform: uppercase;
 		display: flex;
@@ -158,16 +181,27 @@
 	}
 }
 
+/**
+ *
+ * Size increase
+ *
+ */
+
 @media screen and (min-width:501px) {
 	.scores-table {
 		font-size: 1.4em;
 	}
 }
 
-/*Returning to normal menu and size increase*/
+/**
+ *
+ * Returning to normal menu and size increase
+ *
+ */
+
 @media screen and (min-width:701px) {
 	/*Menu*/
-	.hamburguer,
+	.hamburger,
 	.x {
 		display: none !important;
 	}
@@ -186,7 +220,12 @@
 		padding: 5px;
 	}
 
-	/*Size increase*/
+	/**
+	 *
+	 * Size increase
+	 *
+	 */
+
 	article.description {
 		font-size: 1.5em;
 	}
@@ -244,9 +283,12 @@
 	}
 }
 
-/*size increase*/
+/**
+ *
+ * Size increase & Column "undrop"
+ *
+ */
 
-/*Column "undrop"*/
 @media screen and (min-width:931px) {
 	.scores {
 		width: 60%;

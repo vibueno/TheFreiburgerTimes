@@ -1,8 +1,9 @@
 /*
-Sizes in this page are optimized for mini smarphones.
-We use the file responsive.css to build up on this and
-make the page look good on bigger devices too
-*/
+	Sizes in this page are optimized for mini smarphones.
+	We use the file responsive.css to build up on this and
+	make the page look good on bigger devices too
+ */
+
 img,
 embeb,
 object,
@@ -81,11 +82,12 @@ article.description {
   font-size: 1.2em;
 }
 
-/*
+/**
  *
  * Header
  *
  */
+
 .header {
   min-height: 56px;
   transition: min-height 0.3s;
@@ -115,11 +117,12 @@ article.description {
   color: #766d4e;
 }
 
-/*
+/**
  *
  * Top Level Navigation
  *
  */
+
 .nav {
   width: 100%;
   margin: 0 auto 0 auto;
@@ -159,30 +162,33 @@ article.description {
   color: #212121;
 }
 
-/*
+/**
  *
  * Main
  *
  */
+
 main {
   width: 80%;
   margin: 0 auto 0 auto;
 }
 
-/*
+/**
  *
  * Content
  *
  */
+
 .content {
   box-shadow: 0 2px 5px rgba(118, 109, 78, 0.7);
 }
 
-/*
+/**
  *
  * Hero
  *
  */
+
 .hero {
   height: 100%;
   min-height: 300px;
@@ -202,11 +208,12 @@ main {
   padding: 1em;
 }
 
-/*
+/**
  *
  * Top News
  *
  */
+
 .top-news {
   width: 100%;
   height: auto;
@@ -239,11 +246,12 @@ main {
   text-decoration: underline;
 }
 
-/*
+/**
  *
  * Sport Scores
  *
  */
+
 .sports-title {
   margin: 0 0 5px 0;
   padding: 3px 0 3px 5px;
@@ -302,11 +310,12 @@ main {
   display: none;
 }
 
-/*
+/**
  *
  * Weather
  *
  */
+
 .weather {
   width: 100%;
   padding: 1em;
@@ -382,11 +391,12 @@ main {
   max-width: 95px;
 }
 
-/*
+/**
  *
  * Latest news
  *
  */
+
 .recent-news {
   clear: both;
   padding: 1em;
@@ -430,11 +440,12 @@ main {
   margin: 0 0 0 0;
 }
 
-/*
+/**
  *
  * Footer
  *
  */
+
 footer {
   padding: 1em;
   width: 100%;
