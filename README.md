@@ -17,7 +17,7 @@ This project was developed within the frame of the Front End Developer Nanodegre
 For a live version of The Freiburger Times, visit [GitHub Pages](https://vibueno.github.io/thefreiburgertimes).
 
 ## Libraries
-No libraries have been used for this problem. Only vanilla JS.
+No libraries have been used for this project. Only vanilla JS.
 
 ## Features
 * Mobile navigation menu (hamburguer) with no background scrolling
