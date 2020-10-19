@@ -1,75 +1,75 @@
 window.onload=function(){
 
-	const body = document.querySelector("body");
-	const header = document.querySelector(".header");
-	const main = document.querySelector(".main");
-	const drawer = document.querySelector("#drawer");
-	const hamburgerMenu = document.querySelector("#hamburgerMenu");
-	const xMenu = document.querySelector("#xMenu");
-	const menu_entries = document.querySelectorAll(".nav-item > a");
-	const backtotop = document.querySelector(".backtotop");
-	const backtotopClassVisible = "backtotop-visible";
-	const backtotopClassHidden = "backtotop-hidden";
+	const BODY = document.querySelector('body');
+	const HEADER = document.querySelector('.header');
+	const MAIN = document.querySelector('.main');
+	const DRAWER = document.querySelector('#drawer');
+	const HAMBURGER_MENU = document.querySelector('#hamburger-menu');
+	const X_MENU = document.querySelector('#x-menu');
+	const MENU_ENTRIES = document.querySelectorAll('.nav-item > a');
+	const BACK_TO_TOP = document.querySelector('.back-to-top');
+	const BACK_TO_TOP_CLASS_VISIBLE = 'back-to-top-visible';
+	const BACK_TO_TOP_CLASS_HIDDEN = 'back-to-top-hidden';
 
-	let headerPaddingRight = header.style.paddingRight === ""?"0":header.style.paddingRight;
-	let mainPaddingRight = main.style.paddingRight === ""?"0":main.style.paddingRight;
+	let headerPaddingRight = HEADER.style.paddingRight === ''?'0':HEADER.style.paddingRight;
+	let mainPaddingRight = MAIN.style.paddingRight === ''?'0':MAIN.style.paddingRight;
 
 	/**
-	 * Sets the visibility of the back to top button
+   * @description Sets the visibility of the back to top button
 	 */
 
-	function setBacktotopVisibility(){
-		if (((window.innerHeight + window.pageYOffset) >= (document.body.offsetHeight/1.75)) &&
-			(!drawer.classList.contains("open"))) {
+	function setBacktotopVisibility() {
+		if (((window.innerHeight + window.pageYOffset) >= (BODY.offsetHeight/1.75)) &&
+			(!DRAWER.classList.contains('open'))) {
 			window.setTimeout( function() {
-				backtotop.classList.remove(backtotopClassHidden);
-				backtotop.classList.add(backtotopClassVisible);
+				BACK_TO_TOP.classList.remove(BACK_TO_TOP_CLASS_HIDDEN);
+				BACK_TO_TOP.classList.add(BACK_TO_TOP_CLASS_VISIBLE);
 			}, 100);
 
 		}
-		else{
+		else {
 			window.setTimeout( function() {
-				backtotop.classList.remove(backtotopClassVisible);
-				backtotop.classList.add(backtotopClassHidden);
+				BACK_TO_TOP.classList.remove(BACK_TO_TOP_CLASS_VISIBLE);
+				BACK_TO_TOP.classList.add(BACK_TO_TOP_CLASS_HIDDEN);
 			}, 100);
 		}
 	}
 
 	/**
-	 * Opens the side menu on smaller viewports
+	 * @description Opens the side menu on smaller viewports
 	 */
 
-	function openMenu(){
+	function openMenu() {
 
 		const scrollYWidth = window.innerWidth - document.documentElement.clientWidth;
 
-		drawer.classList.add("open");
-		hamburgerMenu.style.display = "none";
-		xMenu.style.display = "block";
+		DRAWER.classList.add('open');
+		HAMBURGER_MENU.style.display = 'none';
+		X_MENU.style.display = 'block';
 
 		/*Deactivating scrolling*/
-		body.style.overflow = "hidden";
-		body.style.position = "absolute";
-		header.style.paddingRight = `${scrollYWidth}px`;
-		main.style.paddingRight = `${scrollYWidth}px`;
+		BODY.style.overflow = 'hidden';
+		BODY.style.position = 'absolute';
+		HEADER.style.paddingRight = `${scrollYWidth}px`;
+		MAIN.style.paddingRight = `${scrollYWidth}px`;
 
 		setBacktotopVisibility();
 	}
 
 	/**
-	 * Closes the side menu on smaller viewports
+	  * @description Closes the side menu on smaller viewports
 	 */
 
-	function closeMenu(){
-		drawer.classList.remove("open");
-		hamburgerMenu.style.display = "block";
-		xMenu.style.display = "none";
+	function closeMenu() {
+		DRAWER.classList.remove('open');
+		HAMBURGER_MENU.style.display = 'block';
+		X_MENU.style.display = 'none';
 
 		/*Reactivating scrolling*/
-		body.style.overflow = "auto";
+		BODY.style.overflow = 'auto';
 
-		header.style.paddingRight = `${headerPaddingRight}px`;
-		main.style.paddingRight = `${mainPaddingRight}px`;
+		HEADER.style.paddingRight = `${headerPaddingRight}px`;
+		MAIN.style.paddingRight = `${mainPaddingRight}px`;
 
 		setBacktotopVisibility();
 	}
@@ -81,15 +81,15 @@ window.onload=function(){
 	 */
 
 	/**
-	 * Toggles the side menu
+	 * @description Toggles the side menu
 	 */
 
-	hamburgerMenu.addEventListener("click", function(e) {
+	HAMBURGER_MENU.addEventListener('click', function(e) {
 
-		if (!this.classList.contains("open")){
+		if (!this.classList.contains('open')) {
 			openMenu();
 		}
-		else{
+		else {
 			closeMenu();
 		}
 
@@ -103,8 +103,8 @@ window.onload=function(){
 	 * close the menu when clicked
 	 */
 
-	[header, main, xMenu].forEach(item => {
-	  item.addEventListener("click",  function() {
+	[HEADER, MAIN, X_MENU].forEach(item => {
+	  item.addEventListener('click',  function() {
 			closeMenu();
 		});
 	});
@@ -118,8 +118,8 @@ window.onload=function(){
 	 * (we are using vanilla JS)
 	 */
 
-	for (const menu_entry of menu_entries) {
-		menu_entry.addEventListener("click", function() {
+	for (const MENU_ENTRY of MENU_ENTRIES) {
+		MENU_ENTRY.addEventListener('click', function() {
 			closeMenu();
 		});
 	}
@@ -128,7 +128,7 @@ window.onload=function(){
 	 * Scroll to page top when back to top button clicked
 	 */
 
-	backtotop.addEventListener("click", function() {
+	BACK_TO_TOP.addEventListener('click', function() {
 		scroll(0,0);
 	});
 
@@ -137,7 +137,7 @@ window.onload=function(){
 	 * should be shown or hidden
 	 */
 
-	window.addEventListener("scroll", function() {
+	window.addEventListener('scroll', function() {
 		setBacktotopVisibility();
 	});
 

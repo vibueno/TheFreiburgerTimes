@@ -495,12 +495,12 @@ footer a:hover {
   height: auto;
 }
 
-.img-contactus {
+.img-contact-us {
   width: 30px;
   height: auto;
 }
 
-.backtotop {
+.back-to-top {
   width: 40px;
   height: auto;
   position: fixed;
@@ -511,13 +511,13 @@ footer a:hover {
   cursor: pointer;
 }
 
-.backtotop-visible {
+.back-to-top-visible {
   transition: opacity 1s linear;
   opacity: 1;
   display: block;
 }
 
-.backtotop-hidden {
+.back-to-top-hidden {
   opacity: 0;
   transition: visibility 0s 1s, opacity 1s linear;
 }

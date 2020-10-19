@@ -9,7 +9,6 @@
 - [Libraries](#libraries)
 - [Compatibility](#compatibility)
 - [Tests](#tests)
-- [Validations](#validations)
 
 ## Description
 This project was developed within the frame of the Front End Developer Nanodegree program at Udacity.
@@ -30,6 +29,16 @@ For a live version of The Freiburger Times, visit [GitHub Pages](https://vibueno
 * **Responsive Patterns:** *Off Canvas*, *Column Drop*
 * **Responsive Images:** showing crops for certain pictures
 * **Responsive Tables:** *No more tables* & *Hidden Columns*s techniques
+
+### Style Guidelines
+* [HTML](https://validator.w3.org)
+* [CSS](http://udacity.github.io/frontend-nanodegree-styleguide/css.html)
+* [JavaScript](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)
+
+### Validations
+* [HTML (W3C)](https://validator.w3.org)
+* [CSS (W3C)](https://jigsaw.w3.org/css-validator)
+* [JavaScript (JSHint)](https://jshint.com)
 
 ## Libraries
 No libraries have been used for this project. Only vanilla JS.
