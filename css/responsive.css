@@ -6,31 +6,31 @@
 
 @media screen and (max-width:700px) {
 	.hamburger {
+		position: fixed;
+		z-index: 30;
+		top: 15px;
+		left: 15px;
+		border-radius: 5px;
 		width: 40px;
 		height: auto;
-		position: fixed;
 		cursor: pointer;
-		left: 15px;
-		top: 15px;
-		z-index: 30;
-		border-radius: 5px;
 	}
 
 	.x {
+		z-index: 30;
+		position: relative;
+		margin: 15px 15px 15px 15px;
 		width: 40px;
 		height: auto;
-		position: relative;
 		cursor: pointer;
-		margin: 15px 15px 15px 15px;
-		z-index: 30;
 	}
 
 	nav {
-		height: 100%;
 		position: fixed;    /* This trasform moves the drawer off canvas. */
 		-webkit-transform: translate(-600px, 0);
 		transform: translate(-600px, 0);    /* Optionally, we animate the drawer. */
 		transition: transform 0.3s ease;
+		height: 100%;
 	}
 
 	nav.open {
@@ -148,20 +148,21 @@
 	}
 
 	.scores-table td {
-
 		/* Behave  like a "row" */
+		position: relative;
 		border: none;
 		border-bottom: 1px solid #eee;
-		position: relative;
-		padding-left: 50%;
-		padding-top: 7px;
-		white-space: normal;
-		text-align: left;
 		min-height: 15px;
+		padding: 7px 0 0 50%;
+		text-align: left;
+		white-space: normal;
 	}
 
 	.scores-table td:before {
-
+		/*Label the data*/
+		content: attr(data-title);
+		display: flex;
+		align-items: center;
 		/* Now like a table header */
 		position: absolute;
 		/* Top/left values mimic padding */
@@ -169,14 +170,10 @@
 		left: 6px;
 		width: 45%;
 		padding-right: 10px;
-		white-space: nowrap;
-		text-align: left;
 		font-weight: bold;
-		/*Label the data*/
-		content: attr(data-title);
+		text-align: left;
 		text-transform: uppercase;
-		display: flex;
-		align-items: center;
+		white-space: nowrap;
 	}
 }
 
@@ -206,17 +203,17 @@
 	}
 
 	.nav {
-		top: 0;
 		position: sticky;
+		top: 0;
 		padding: 0;
 	}
 
 	.nav-item {
 		display: inline-block;
-		font-size: 1.75em;
-		width: 24%;
 		margin: 0;
+		width: 24%;
 		padding: 5px;
+		font-size: 1.75em;
 	}
 
 	/**
@@ -290,8 +287,8 @@
 
 @media screen and (min-width:931px) {
 	.scores {
-		width: 60%;
 		display: block;
+		width: 60%;
 		padding: 1em 0.5em 1em 1em;
 	}
 
@@ -304,8 +301,8 @@
 	}
 
 	.sports-title {
-		padding: 3px 0 3px 5px;
 		box-sizing: border-box;
+		padding: 3px 0 3px 5px;
 	}
 
 	.weather {

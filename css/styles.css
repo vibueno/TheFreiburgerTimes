@@ -20,8 +20,8 @@ html {
 body,
 html {
   margin: 0 auto 0 auto;
-  padding: 0;
   width: 100%;
+  padding: 0;
 }
 
 header {
@@ -29,14 +29,14 @@ header {
 }
 
 body {
-  font-family: Roboto;
   font-size: 13px;
+  font-family: Roboto;
   color: #424242;
 }
 
 .main {
-  max-width: 1400px;
   margin: auto;
+  max-width: 1400px;
 }
 
 h1,
@@ -48,19 +48,19 @@ h5 {
 }
 
 h2 {
-  text-transform: uppercase;
   font-size: 1.2em;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-size: 1em;
-  width: 100%;
   -webkit-box-shadow: inset 200px 0px 85px -5px rgba(185, 164, 81, 1);
   -moz-box-shadow: inset 200px 0px 85px -5px rgba(185, 164, 81, 1);
   box-shadow: inset 200px 0px 85px -5px rgba(185, 164, 81, 1);
+  width: 100%;
+  font-size: 1em;
   line-height: 24px;
-  color: #fff;
   font-weight: bold;
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -69,15 +69,15 @@ footer,
 section,
 article,
 div {
-  box-sizing: border-box;
-  display: flex;
+	display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+ 	list-style: none;
 }
 
 article.description {
@@ -96,24 +96,24 @@ article.description {
 }
 
 .header-inner {
-  width: 80%;
-  margin: 0 auto 0 auto;
-  text-align: center;
   display: block;
+  margin: 0 auto 0 auto;
+  width: 80%;
+  text-align: center;
 }
 
 .header-logo {
-  height: 60%;
-  max-width: 80px;
-  max-height: 80px;
-  width: auto;
   margin: 12px 0 0 0;
+  width: auto;
+  max-width: 80px;
+  height: 60%;
+  max-height: 80px;
 }
 
 .header-title {
-  font-weight: 300;
-  font-size: 2em;
   margin: 0.15em 0 0.3em 0;
+  font-size: 2em;
+  font-weight: 300;
   font-family: "Merienda One";
   text-shadow: 4px 4px 4px #aaa;
   color: #766d4e;
@@ -126,32 +126,32 @@ article.description {
  */
 
 .nav {
-  width: 100%;
-  margin: 0 auto 0 auto;
-  padding: 0 0 5px 0;
   z-index: 10;
   top: 0;
-  background-color: #78704f;
   opacity: 0.95;
+  margin: 0 auto 0 auto;
   box-shadow: 0 2px 5px rgba(118, 109, 78, 0.7);
+  width: 100%;
+  padding: 0 0 5px 0;
+  background-color: #78704f;
 }
 
 .nav-list {
+  margin: 0;
   width: 100%;
   padding: 0;
-  margin: 0;
   text-align: center;
 }
 
 .nav-item {
+  display: block;
+	margin: 0 0 10px 0;
   box-sizing: border-box;
-  text-align: center;
   padding: 10px;
   text-transform: uppercase;
   font-size: 2em;
   font-weight: 800;
-  display: block;
-  margin: 0 0 10px 0;
+  text-align: center;
 }
 
 .nav a {
@@ -171,8 +171,8 @@ article.description {
  */
 
 main {
-  width: 80%;
   margin: 0 auto 0 auto;
+  width: 80%;
 }
 
 /**
@@ -192,22 +192,22 @@ main {
  */
 
 .hero {
+  position: relative;
+  width: auto;
   height: 100%;
   min-height: 300px;
-  width: auto;
-  position: relative;
   background-image: url("../img/news/newyork.jpg");
   background-size: cover;
 }
 
 .hero article {
   box-sizing: border-box;
-  background-color: rgba(171, 158, 115, 0.8);
   bottom: 0;
-  height: 40%;
   width: 100%;
-  color: #fff;
+  height: 40%;
   padding: 1em;
+  background-color: rgba(171, 158, 115, 0.8);
+  color: #fff;
 }
 
 /**
@@ -217,9 +217,9 @@ main {
  */
 
 .top-news {
+  border-bottom: 0;
   width: 100%;
   height: auto;
-  border-bottom: 0;
   padding: 1em;
 }
 
@@ -230,8 +230,8 @@ main {
 .top-news-item {
   border-bottom: 1px solid rgba(118, 109, 78, 0.3);
   padding: 1em 0;
-  line-height: 19.2px;
   font-size: 1.2em;
+  line-height: 19.2px;
 }
 
 .top-news-item:last-child {
@@ -260,16 +260,16 @@ main {
 }
 
 .scores {
-  width: 100%;
   float: left;
+  width: 100%;
   padding: 1em;
 }
 
 .scores-table {
-  width: 100%;
-  border-collapse: collapse;
   box-sizing: border-box;
-  border-bottom: 1px solid #E0E0E0;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  border-collapse: collapse;
   font-size: 0.9em;
 }
 
@@ -279,10 +279,10 @@ main {
 }
 
 .scores-table th {
-  color: #fff;
-  font-weight: bold;
-  background-color: #d6bc53;
   opacity: 0.80;
+  background-color: #d6bc53;
+  font-weight: bold;
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -330,8 +330,8 @@ main {
 
 .weather-location {
   display: block;
-  font-weight: 300;
   font-size: 1.5em;
+  font-weight: 300;
 }
 
 .weather-desc {
@@ -341,23 +341,23 @@ main {
 }
 
 .weather-today {
-  width: 100%;
   align-items: center;
-  margin: 0 0 10px 0;
+	margin: 0 0 10px 0;
+  width: 100%;
   font-weight: bold;
 }
 
 .weather-today-image {
+  width: 100%;
   min-width: 100px;
   max-width: 150px;
-  width: 100%;
   height: auto;
   display: block;
 }
 
 .weather-today-temp {
-  display: table-cell;
   vertical-align: middle;
+  display: table-cell;
 }
 
 .weather-today-temp-num {
@@ -369,19 +369,19 @@ main {
 }
 
 .weather-next {
-  width: 100%;
-  display: flex;
+	display: flex;
   flex-wrap: wrap;
+  margin: 0 auto 0 auto;
+  width: 100%;
   height: auto;
   text-align: center;
-  margin: 0 auto 0 auto;
 }
 
 .weather-next-item {
-  text-align: center;
   width: 20%;
   height: auto;
   font-size: 1.1em;
+  text-align: center;
 }
 
 .weather-next-item span {
@@ -406,9 +406,9 @@ main {
 
 .snippet {
   clear: both;
+  display: inline-block;
   margin: 10px 0 20px;
   font-size: 1.2em;
-  display: inline-block;
 }
 
 .snippet-title {
@@ -428,10 +428,10 @@ main {
 }
 
 .snippet-thumbnail {
-  width: 100%;
-  height: auto;
   display: block;
   margin: 0 10px 10px 0;
+  width: 100%;
+  height: auto;
 }
 
 .snippet-thumbnail:hover {
@@ -449,16 +449,16 @@ main {
  */
 
 footer {
-  padding: 1em;
   width: 100%;
+  padding: 1em;
   font-size: 1.1em;
 }
 
 footer ul {
-  text-align: center;
-  width: 100%;
   border-bottom: 1px solid rgba(118, 109, 78, 0.3);
+  width: 100%;
   padding: 0 0 10px 0;
+  text-align: center;
 }
 
 footer li {
@@ -466,7 +466,7 @@ footer li {
   margin: 0 0.5em;
 }
 
-footer a {
+	footer a {
   text-decoration: none;
   color: #666046;
 }
@@ -476,9 +476,9 @@ footer a:hover {
 }
 
 .footer-credits {
-  font-size: 0.9em;
-  margin: 10px 0 0 0;
+	margin: 10px 0 0 0;
   padding: 0 0 10px 0;
+  font-size: 0.9em;
 }
 
 .footer-credits-title {
@@ -501,20 +501,20 @@ footer a:hover {
 }
 
 .back-to-top {
-  width: 40px;
-  height: auto;
   position: fixed;
+  z-index: 31;
   bottom: 15px;
   right: 15px;
-  z-index: 31;
   border-radius: 5px;
+  width: 40px;
+  height: auto;
   cursor: pointer;
 }
 
 .back-to-top-visible {
-  transition: opacity 1s linear;
-  opacity: 1;
   display: block;
+	opacity: 1;
+  transition: opacity 1s linear;
 }
 
 .back-to-top-hidden {
