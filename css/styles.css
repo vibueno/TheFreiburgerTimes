@@ -124,7 +124,7 @@ article.description {
   z-index: 10;
   top: 0;
   opacity: 0.95;
-  margin: 0 auto 0 auto;
+  margin: 0 0 0 0;
   box-shadow: 0 2px 5px rgba(118, 109, 78, 0.7);
   width: 100%;
   padding: 0 0 5px 0;
@@ -168,11 +168,7 @@ article.description {
 .main-container {
 	max-width: 1600px;
 	margin: 0 auto 0 auto;
-}
-
-main {
-  margin: 0 auto 0 auto;
-  width: 80%;
+	width: 80%;
 }
 
 /**

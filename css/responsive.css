@@ -1,43 +1,8 @@
-/**
- *
- * Hamburguer menu
- *
+/*
+ * The media queries in this file are sorted, regardless of its changes, by
+ * - ascending min-width
+ * - ascending max-width
  */
-
-@media screen and (max-width:700px) {
-	.hamburger {
-		position: fixed;
-		z-index: 30;
-		top: 15px;
-		left: 15px;
-		border-radius: 5px;
-		width: 40px;
-		height: auto;
-		cursor: pointer;
-	}
-
-	.x {
-		z-index: 30;
-		position: relative;
-		margin: 15px 15px 15px 15px;
-		width: 40px;
-		height: auto;
-		cursor: pointer;
-	}
-
-	nav {
-		position: fixed;    /* This trasform moves the drawer off canvas. */
-		-webkit-transform: translate(-600px, 0);
-		transform: translate(-600px, 0);    /* Optionally, we animate the drawer. */
-		transition: transform 0.3s ease;
-		height: 100%;
-	}
-
-	nav.open {
-		-webkit-transform: translate(0, 0);
-		transform: translate(0, 0);
-	}
-}
 
 /**
  *
@@ -45,7 +10,7 @@
  *
  */
 
-@media screen and (min-width:301px) {
+@media screen and (min-width:300px) {
 	.scores-table {
 		font-size: 1em;
 	}
@@ -61,7 +26,7 @@
  *
  */
 
-@media screen and (min-width:366px) {
+@media screen and (min-width:350px) {
 	.news-title,
 	.sports-title,
 	.weather-title {
@@ -151,11 +116,7 @@
  *
  */
 
-@media screen and (min-width:451px) {
-	.nav {
-		width: 80%;
-	}
-
+@media screen and (min-width:450px) {
 	.weather-next-item {
 		font-size: 1.5em;
 	}
@@ -183,7 +144,7 @@
  *
  */
 
-@media screen and (min-width:501px) {
+@media screen and (min-width:500px) {
 	.scores-table {
 		font-size: 1.4em;
 	}
@@ -195,7 +156,7 @@
  *
  */
 
-@media screen and (min-width:701px) {
+@media screen and (min-width:700px) {
 	/*Menu*/
 	.hamburger,
 	.x {
@@ -285,7 +246,7 @@
  *
  */
 
-@media screen and (min-width:931px) {
+@media screen and (min-width:900px) {
 	.scores {
 		display: block;
 		width: 60%;
@@ -321,5 +282,46 @@
 
 	.scores-location {
 		display: none;
+	}
+}
+
+/**
+ *
+ * Hamburguer menu
+ *
+ */
+
+@media screen and (max-width:700px) {
+	.hamburger {
+		position: fixed;
+		z-index: 30;
+		top: 15px;
+		left: 15px;
+		border-radius: 5px;
+		width: 40px;
+		height: auto;
+		cursor: pointer;
+	}
+
+	.x {
+		z-index: 30;
+		position: relative;
+		margin: 15px 15px 15px 15px;
+		width: 40px;
+		height: auto;
+		cursor: pointer;
+	}
+
+	nav {
+		position: fixed;    /* This trasform moves the drawer off canvas. */
+		-webkit-transform: translate(-800px, 0);
+		transform: translate(-800px, 0);    /* Optionally, we animate the drawer. */
+		transition: transform 0.3s ease;
+		height: 100%;
+	}
+
+	nav.open {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
 	}
 }
