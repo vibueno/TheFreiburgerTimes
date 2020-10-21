@@ -7,11 +7,10 @@
 - [Features](#features)
 - [Programming](#programming)
 - [Libraries](#libraries)
-- [Compatibility](#compatibility)
 - [Tests](#tests)
 
 ## Description
-This project was developed within the frame of the Front End Developer Nanodegree program at Udacity.
+This project was developed within the frame of the Front End Developer Nanodegree program at Udacity and greatly improved afterwards.
 
 ## Live
 For a live version of The Freiburger Times, visit [GitHub Pages](https://vibueno.github.io/thefreiburgertimes).
@@ -22,10 +21,10 @@ For a live version of The Freiburger Times, visit [GitHub Pages](https://vibueno
 * Back to top button with soft scrolling & fade-in & out effect
 
 ## Design
-* Mobile first
+* Mobile first: the styles included in the file styles.css are optimized for a minimum width of 240px. The file responsiveness.css builds on styles.css by providing additional styles which make the site work correctly on bigger viewports.
 
 ## Programming
-* **Fully responsive** (starting at 240px Unihertz Jelly Pro, as fas as I know the smallest Smartphone widely available)
+* **Fully responsive** (starting at 240px Unihertz of Jelly Pro, as fas as I know the smallest Smartphone widely available)
 * **Responsive Patterns:** *Off Canvas*, *Column Drop*
 * **Responsive Images:** showing crops for certain pictures
 * **Responsive Tables:** *No more tables* & *Hidden Columns*s techniques
@@ -43,15 +42,6 @@ For a live version of The Freiburger Times, visit [GitHub Pages](https://vibueno
 
 ## Libraries
 No libraries have been used for this project. Only vanilla JS.
-
-## Compatibility
-This website should work correctly at least with the following browsers:
-* Chrome 85.0
-* Firefox 80.0
-* Opera 70.0
-* Falkon 3.1.0
-
-To be tested on IE and Edge
 
 ## Tests
 * Desktop computer + Developer Tools
