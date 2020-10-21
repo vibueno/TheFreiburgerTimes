@@ -34,11 +34,6 @@ body {
   color: #424242;
 }
 
-.main {
-  margin: auto;
-  max-width: 1400px;
-}
-
 h1,
 h2,
 h3,
@@ -169,6 +164,11 @@ article.description {
  * Main
  *
  */
+
+.main-container {
+	max-width: 1600px;
+	margin: 0 auto 0 auto;
+}
 
 main {
   margin: 0 auto 0 auto;
