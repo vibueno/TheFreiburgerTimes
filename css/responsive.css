@@ -87,38 +87,6 @@
 
 /**
  *
- * Size increase
- *
- */
-
-@media screen and (min-width:451px) {
-	.nav {
-		width: 80%;
-	}
-
-	.weather-next-item {
-		font-size: 1.5em;
-	}
-
-	.snippet {
-		font-size: 1.5em;
-	}
-
-	.img-twitter {
-		width: 35px;
-	}
-
-	.img-rss {
-		width: 37px;
-	}
-
-	.img-contact-us {
-		width: 38px;
-	}
-}
-
-/**
- *
  * Scores table columns
  *
  */
@@ -174,6 +142,38 @@
 		text-align: left;
 		text-transform: uppercase;
 		white-space: nowrap;
+	}
+}
+
+/**
+ *
+ * Size increase
+ *
+ */
+
+@media screen and (min-width:451px) {
+	.nav {
+		width: 80%;
+	}
+
+	.weather-next-item {
+		font-size: 1.5em;
+	}
+
+	.snippet {
+		font-size: 1.5em;
+	}
+
+	.img-twitter {
+		width: 35px;
+	}
+
+	.img-rss {
+		width: 37px;
+	}
+
+	.img-contact-us {
+		width: 38px;
 	}
 }
 
