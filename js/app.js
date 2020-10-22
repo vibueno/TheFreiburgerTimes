@@ -17,7 +17,6 @@ window.onload=function(){
 	/**
    * @description Sets the visibility of the back to top button
 	 */
-
 	function setBacktotopVisibility() {
 		if (((window.innerHeight + window.pageYOffset) >= (BODY.offsetHeight/1.75)) &&
 			(!DRAWER.classList.contains('open'))) {
@@ -38,7 +37,6 @@ window.onload=function(){
 	/**
 	 * @description Opens the side menu on smaller viewports
 	 */
-
 	function openMenu() {
 
 		const scrollYWidth = window.innerWidth - document.documentElement.clientWidth;
@@ -58,8 +56,7 @@ window.onload=function(){
 
 	/**
 	  * @description Closes the side menu on smaller viewports
-	 */
-
+	  */
 	function closeMenu() {
 		DRAWER.classList.remove('open');
 		HAMBURGER_MENU.style.display = 'block';
@@ -83,7 +80,6 @@ window.onload=function(){
 	/**
 	 * @description Toggles the side menu
 	 */
-
 	HAMBURGER_MENU.addEventListener('click', function(e) {
 
 		if (!this.classList.contains('open')) {
@@ -96,27 +92,27 @@ window.onload=function(){
 		e.stopPropagation();
 	});
 
-
 	/**
-	 * Side menu should get closed when the user clicks outside it
-	 * We add a click event ĺistener for all the elements which should
-	 * close the menu when clicked
+   * @description Closes the side menu when user clicks outside of it
+	 *
 	 */
 
+	 //event ĺistener added for all elements which should close menu when clicked
 	[HEADER, MAIN, X_MENU].forEach(item => {
 	  item.addEventListener('click',  function() {
 			closeMenu();
 		});
 	});
 
-	/*
-	 * Side menu should get closed after clicking on a menu entry
-
-	 * This behaviour could also be achieved with event delegation,
-	 * but since we only have a couple of menu entries,
-	 * it does not pay off to complicate the code
-	 * (we are using vanilla JS)
+	/**
+   * @description Closes side menu after clicking on menu entry
+	 *
 	 */
+
+	/* This behaviour could also be achieved with event delegation,
+	but since we only have a couple of menu entries,
+	it does not pay off to complicate the code
+	(we are using vanilla JS) */
 
 	for (const MENU_ENTRY of MENU_ENTRIES) {
 		MENU_ENTRY.addEventListener('click', function() {
@@ -125,18 +121,17 @@ window.onload=function(){
 	}
 
 	/**
-	 * Scroll to page top when back to top button clicked
+   * @description Scrolls to page top when back to top button clicked
+	 *
 	 */
-
 	BACK_TO_TOP.addEventListener('click', function() {
 		scroll(0,0);
 	});
 
 	/**
-	 * On each scroll, wen need to check whether the back to top button
-	 * should be shown or hidden
+   * @description Checks on each scroll whether back to top button should be shown
+	 *
 	 */
-
 	window.addEventListener('scroll', function() {
 		setBacktotopVisibility();
 	});
