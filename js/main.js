@@ -2,7 +2,7 @@ window.onload=function(){
 
 	const BODY = document.querySelector('body');
 	const HEADER = document.querySelector('.header');
-	const MAIN = document.querySelector('.main');
+	const MAIN = document.querySelector('main');
 	const DRAWER = document.querySelector('#drawer');
 	const HAMBURGER_MENU = document.querySelector('#hamburger-menu');
 	const X_MENU = document.querySelector('#x-menu');
