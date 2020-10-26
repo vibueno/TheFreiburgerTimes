@@ -64,7 +64,7 @@ footer,
 section,
 article,
 div {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
@@ -72,7 +72,7 @@ div {
 ul {
   margin: 0;
   padding: 0;
- 	list-style: none;
+  list-style: none;
 }
 
 article.description {
@@ -141,7 +141,7 @@ article.description {
 
 .nav-item {
   display: block;
-	margin: 0 0 10px 0;
+  margin: 0 0 10px 0;
   box-sizing: border-box;
   padding: 10px;
   text-transform: uppercase;
@@ -167,9 +167,9 @@ article.description {
  */
 
 .main-container {
-	max-width: 1600px;
-	margin: 0 auto 0 auto;
-	width: 80%;
+  max-width: 1600px;
+  margin: 0 auto 0 auto;
+  width: 80%;
 }
 
 /**
@@ -339,7 +339,7 @@ article.description {
 
 .weather-today {
   align-items: center;
-	margin: 0 0 10px 0;
+  margin: 0 0 10px 0;
   width: 100%;
   font-weight: bold;
 }
@@ -366,7 +366,7 @@ article.description {
 }
 
 .weather-next {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
   margin: 0 auto 0 auto;
   width: 100%;
@@ -463,17 +463,17 @@ footer li {
   margin: 0 0.5em;
 }
 
-	footer a {
+  footer a {
   text-decoration: none;
   color: #666046;
 }
 
 footer a:hover {
-	color: #ab9b5a;
+  color: #ab9b5a;
 }
 
 .footer-credits {
-	margin: 10px 0 0 0;
+  margin: 10px 0 0 0;
   padding: 0 0 10px 0;
   font-size: 0.9em;
 }
@@ -510,7 +510,7 @@ footer a:hover {
 
 .back-to-top-visible {
   display: block;
-	opacity: 1;
+  opacity: 1;
   transition: opacity 1s linear;
 }
 

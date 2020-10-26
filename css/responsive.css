@@ -11,13 +11,13 @@
  */
 
 @media screen and (min-width:300px) {
-	.scores-table {
-		font-size: 1em;
-	}
+  .scores-table {
+    font-size: 1em;
+  }
 
-	.weather-next-item {
-		font-size: 1.2em;
-	}
+  .weather-next-item {
+    font-size: 1.2em;
+  }
 }
 
 /**
@@ -27,27 +27,27 @@
  */
 
 @media screen and (min-width:350px) {
-	.news-title,
-	.sports-title,
-	.weather-title {
-		font-size: 1.3em;
-	}
+  .news-title,
+  .sports-title,
+  .weather-title {
+    font-size: 1.3em;
+  }
 
-	.header-title {
-		font-size: 3em;
-	}
+  .header-title {
+    font-size: 3em;
+  }
 
-	h2 {
-		font-size: 1.5em;
-	}
+  h2 {
+    font-size: 1.5em;
+  }
 
-	.weather-today-temp-num {
-		font-size: 2.5em;
-	}
+  .weather-today-temp-num {
+    font-size: 2.5em;
+  }
 
-	.weather-today-temp-deg {
-		font-size: 2.0em;
-	}
+  .weather-today-temp-deg {
+    font-size: 2.0em;
+  }
 }
 
 /**
@@ -57,57 +57,57 @@
  */
 
 @media screen and (max-width:400px) {
-	.scores-table,
-	.scores-table thead,
-	.scores-table tbody,
-	.scores-table th,
-	.scores-table tr {
-		display: block;
-	}
+  .scores-table,
+  .scores-table thead,
+  .scores-table tbody,
+  .scores-table th,
+  .scores-table tr {
+    display: block;
+  }
 
-	.scores-table td {
-		display: flex;
-	}
+  .scores-table td {
+    display: flex;
+  }
 
-	/*Hides table headers (without using display: none; for accessibility)*/
-	.scores-table thead tr {
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
+  /*Hides table headers (without using display: none; for accessibility)*/
+  .scores-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
 
-	.scores-table tr {
-		border: 1px solid #ccc;
-	}
+  .scores-table tr {
+    border: 1px solid #ccc;
+  }
 
-	.scores-table td {
-		/* Behave  like a "row" */
-		position: relative;
-		border: none;
-		border-bottom: 1px solid #eee;
-		min-height: 15px;
-		padding: 7px 0 0 50%;
-		text-align: left;
-		white-space: normal;
-	}
+  .scores-table td {
+    /* Behave  like a "row" */
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #eee;
+    min-height: 15px;
+    padding: 7px 0 0 50%;
+    text-align: left;
+    white-space: normal;
+  }
 
-	.scores-table td:before {
-		/*Label the data*/
-		content: attr(data-title);
-		display: flex;
-		align-items: center;
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%;
-		padding-right: 10px;
-		font-weight: bold;
-		text-align: left;
-		text-transform: uppercase;
-		white-space: nowrap;
-	}
+  .scores-table td:before {
+    /*Label the data*/
+    content: attr(data-title);
+    display: flex;
+    align-items: center;
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
 }
 
 /**
@@ -117,25 +117,25 @@
  */
 
 @media screen and (min-width:450px) {
-	.weather-next-item {
-		font-size: 1.5em;
-	}
+  .weather-next-item {
+    font-size: 1.5em;
+  }
 
-	.snippet {
-		font-size: 1.5em;
-	}
+  .snippet {
+    font-size: 1.5em;
+  }
 
-	.img-twitter {
-		width: 35px;
-	}
+  .img-twitter {
+    width: 35px;
+  }
 
-	.img-rss {
-		width: 37px;
-	}
+  .img-rss {
+    width: 37px;
+  }
 
-	.img-contact-us {
-		width: 38px;
-	}
+  .img-contact-us {
+    width: 38px;
+  }
 }
 
 /**
@@ -145,9 +145,9 @@
  */
 
 @media screen and (min-width:500px) {
-	.scores-table {
-		font-size: 1.4em;
-	}
+  .scores-table {
+    font-size: 1.4em;
+  }
 }
 
 /**
@@ -157,88 +157,88 @@
  */
 
 @media screen and (min-width:700px) {
-	/*Menu*/
-	.hamburger,
-	.x {
-		display: none !important;
-	}
+  /*Menu*/
+  .hamburger,
+  .x {
+    display: none !important;
+  }
 
-	.nav {
-		position: sticky;
-		top: 0;
-		padding: 0;
-		font-size: 1.20em;
-	}
+  .nav {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    font-size: 1.20em;
+  }
 
-	.nav-item {
-		display: inline-block;
-		margin: 0;
-		width: 24%;
-		padding: 5px;
-		font-size: 1.75em;
-	}
+  .nav-item {
+    display: inline-block;
+    margin: 0;
+    width: 24%;
+    padding: 5px;
+    font-size: 1.75em;
+  }
 
-	/**
-	 *
-	 * Size increase
-	 *
-	 */
+  /**
+   *
+   * Size increase
+   *
+   */
 
-	article.description {
-		font-size: 1.5em;
-	}
+  article.description {
+    font-size: 1.5em;
+  }
 
-	.news-title {
-		font-size: 2em;
-	}
+  .news-title {
+    font-size: 2em;
+  }
 
-	.top-news-item {
-		font-size: 1.7em;
-	}
+  .top-news-item {
+    font-size: 1.7em;
+  }
 
-	.sports-title {
-		font-size: 2em;
-	}
+  .sports-title {
+    font-size: 2em;
+  }
 
-	.scores-table {
-		font-size: 1.3em;
-	}
+  .scores-table {
+    font-size: 1.3em;
+  }
 
-	.scores-location {
-		display: table-cell;
-	}
+  .scores-location {
+    display: table-cell;
+  }
 
-	.scores-table td:nth-child(2){
-		text-align: center;
-	}
+  .scores-table td:nth-child(2){
+    text-align: center;
+  }
 
-	.weather-title {
-		font-size: 2em;
-	}
+  .weather-title {
+    font-size: 2em;
+  }
 
-	.weather-next-item {
-		font-size: 1.9em;
-	}
+  .weather-next-item {
+    font-size: 1.9em;
+  }
 
-	.snippet {
-		font-size: 1.7em;
-	}
+  .snippet {
+    font-size: 1.7em;
+  }
 
-	.snippet-text {
-		display: inline;
-	}
+  .snippet-text {
+    display: inline;
+  }
 
-	.img-twitter {
-		width: 50px;
-	}
+  .img-twitter {
+    width: 50px;
+  }
 
-	.img-rss {
-		width: 52px;
-	}
+  .img-rss {
+    width: 52px;
+  }
 
-	.img-contact-us {
-		width: 48px;
-	}
+  .img-contact-us {
+    width: 48px;
+  }
 }
 
 /**
@@ -249,42 +249,42 @@
 
 @media screen and (min-width:900px) {
 
-	.scores {
-		display: block;
-		width: 60%;
-		padding: 1em 0.5em 1em 1em;
-	}
+  .scores {
+    display: block;
+    width: 60%;
+    padding: 1em 0.5em 1em 1em;
+  }
 
-	.scores-table {
-		font-size: 1.6em;
-	}
+  .scores-table {
+    font-size: 1.6em;
+  }
 
-	.scores-table td {
-		padding: 0.4em 0 0.4em 0;
-	}
+  .scores-table td {
+    padding: 0.4em 0 0.4em 0;
+  }
 
-	.sports-title {
-		box-sizing: border-box;
-		padding: 3px 0 3px 5px;
-	}
+  .sports-title {
+    box-sizing: border-box;
+    padding: 3px 0 3px 5px;
+  }
 
-	.weather {
-		width: 40%;
-		padding: 1em 1em 1em 0.5em;
-	}
+  .weather {
+    width: 40%;
+    padding: 1em 1em 1em 0.5em;
+  }
 
-	.weather-today-image {
-		max-width: 100px;
-	}
+  .weather-today-image {
+    max-width: 100px;
+  }
 
-	.snippet-thumbnail {
-		float: left;
-		max-width: 250px;
-	}
+  .snippet-thumbnail {
+    float: left;
+    max-width: 250px;
+  }
 
-	.scores-location {
-		display: none;
-	}
+  .scores-location {
+    display: none;
+  }
 }
 
 /**
@@ -294,36 +294,36 @@
  */
 
 @media screen and (max-width:700px) {
-	.hamburger {
-		position: fixed;
-		z-index: 30;
-		top: 15px;
-		left: 15px;
-		border-radius: 5px;
-		width: 40px;
-		height: auto;
-		cursor: pointer;
-	}
+  .hamburger {
+    position: fixed;
+    z-index: 30;
+    top: 15px;
+    left: 15px;
+    border-radius: 5px;
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+  }
 
-	.x {
-		z-index: 30;
-		position: relative;
-		margin: 15px 15px 15px 15px;
-		width: 40px;
-		height: auto;
-		cursor: pointer;
-	}
+  .x {
+    z-index: 30;
+    position: relative;
+    margin: 15px 15px 15px 15px;
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+  }
 
-	nav {
-		position: fixed;    /* This trasform moves the drawer off canvas. */
-		-webkit-transform: translate(-800px, 0);
-		transform: translate(-800px, 0);    /* Optionally, we animate the drawer. */
-		transition: transform 0.3s ease;
-		height: 100%;
-	}
+  nav {
+    position: fixed;    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-800px, 0);
+    transform: translate(-800px, 0);    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
 
-	nav.open {
-		-webkit-transform: translate(0, 0);
-		transform: translate(0, 0);
-	}
+  nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
 }
