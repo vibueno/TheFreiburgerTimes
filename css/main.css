@@ -511,11 +511,10 @@ footer a:hover {
 
 .back-to-top-visible {
   display: block;
-  opacity: 1;
   transition: opacity 1s linear;
 }
 
 .back-to-top-hidden {
-  opacity: 0;
+  display: none;
   transition: visibility 0s 1s, opacity 1s linear;
 }
