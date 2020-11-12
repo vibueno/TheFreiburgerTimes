@@ -21,7 +21,7 @@ For a live version of The Freiburger Times, visit [GitHub Pages](https://vibueno
 * Back to top button with soft scrolling & fade-in & out effect
 
 ## Design
-* Mobile first: the styles included in the file styles.css are optimized for a minimum width of 240px. The file responsiveness.css builds on styles.css by providing additional styles which make the site work correctly on bigger viewports.
+* Mobile first: the styles included in the main stylesheet are optimized for a minimum width of 240px. The file responsive.css builds on it by providing additional styles which make the site work correctly on bigger viewports.
 
 ## Programming
 * **Fully responsive** (starting at 240px Unihertz of Jelly Pro, as fas as I know the smallest Smartphone widely available)
