@@ -1,75 +1,13 @@
+import { functions } from './functions.js';
+import {
+  HEADER,
+  MAIN,
+  HAMBURGER_MENU,
+  X_MENU,
+  MENU_ENTRIES,
+  BACK_TO_TOP } from './constants.js';
+
 window.onload=function(){
-
-  const BODY = document.querySelector('body');
-  const HEADER = document.querySelector('.header');
-  const MAIN = document.querySelector('main');
-  const DRAWER = document.querySelector('#drawer');
-  const HAMBURGER_MENU = document.querySelector('#hamburger-menu');
-  const X_MENU = document.querySelector('#x-menu');
-  const MENU_ENTRIES = document.querySelectorAll('.nav-item > a');
-  const BACK_TO_TOP = document.querySelector('.back-to-top');
-  const BACK_TO_TOP_CLASS_VISIBLE = 'back-to-top-visible';
-  const BACK_TO_TOP_CLASS_HIDDEN = 'back-to-top-hidden';
-
-  let headerPaddingRight = HEADER.style.paddingRight === ''?'0':HEADER.style.paddingRight;
-  let mainPaddingRight = MAIN.style.paddingRight === ''?'0':MAIN.style.paddingRight;
-
-  /**
-   * @description Sets the visibility of the back to top button
-   */
-  function setBacktotopVisibility() {
-    if (((window.innerHeight + window.pageYOffset) >= (BODY.offsetHeight/1.75)) &&
-      (!DRAWER.classList.contains('open'))) {
-      window.setTimeout( function() {
-        BACK_TO_TOP.classList.remove(BACK_TO_TOP_CLASS_HIDDEN);
-        BACK_TO_TOP.classList.add(BACK_TO_TOP_CLASS_VISIBLE);
-      }, 100);
-
-    }
-    else {
-      window.setTimeout( function() {
-        BACK_TO_TOP.classList.remove(BACK_TO_TOP_CLASS_VISIBLE);
-        BACK_TO_TOP.classList.add(BACK_TO_TOP_CLASS_HIDDEN);
-      }, 100);
-    }
-  }
-
-  /**
-   * @description Opens the side menu on smaller viewports
-   */
-  function openMenu() {
-
-    const scrollYWidth = window.innerWidth - document.documentElement.clientWidth;
-
-    DRAWER.classList.add('open');
-    HAMBURGER_MENU.style.display = 'none';
-    X_MENU.style.display = 'block';
-
-    /*Deactivating scrolling*/
-    BODY.style.overflow = 'hidden';
-    BODY.style.position = 'absolute';
-    HEADER.style.paddingRight = `${scrollYWidth}px`;
-    MAIN.style.paddingRight = `${scrollYWidth}px`;
-
-    setBacktotopVisibility();
-  }
-
-  /**
-    * @description Closes the side menu on smaller viewports
-    */
-  function closeMenu() {
-    DRAWER.classList.remove('open');
-    HAMBURGER_MENU.style.display = 'block';
-    X_MENU.style.display = 'none';
-
-    /*Reactivating scrolling*/
-    BODY.style.overflow = 'auto';
-
-    HEADER.style.paddingRight = `${headerPaddingRight}px`;
-    MAIN.style.paddingRight = `${mainPaddingRight}px`;
-
-    setBacktotopVisibility();
-  }
 
   /**
    *
@@ -83,10 +21,10 @@ window.onload=function(){
   HAMBURGER_MENU.addEventListener('click', function(e) {
 
     if (!this.classList.contains('open')) {
-      openMenu();
+      functions.openMenu();
     }
     else {
-      closeMenu();
+      functions.closeMenu();
     }
 
     e.stopPropagation();
@@ -100,7 +38,7 @@ window.onload=function(){
    //event ĺistener added for all elements which should close menu when clicked
   [HEADER, MAIN, X_MENU].forEach(item => {
     item.addEventListener('click',  function() {
-      closeMenu();
+      functions.closeMenu();
     });
   });
 
@@ -116,7 +54,7 @@ window.onload=function(){
 
   for (const MENU_ENTRY of MENU_ENTRIES) {
     MENU_ENTRY.addEventListener('click', function() {
-      closeMenu();
+      functions.closeMenu();
     });
   }
 
@@ -133,7 +71,7 @@ window.onload=function(){
    *
    */
   window.addEventListener('scroll', function() {
-    setBacktotopVisibility();
+    functions.setBacktotopVisibility();
   });
 
 
@@ -143,6 +81,6 @@ window.onload=function(){
    *
    */
 
-  setBacktotopVisibility();
+  functions.setBacktotopVisibility();
 
 };
