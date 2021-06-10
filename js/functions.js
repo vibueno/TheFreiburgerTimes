@@ -11,24 +11,24 @@ import {
   X_MENU,
   BACK_TO_TOP,
   BACK_TO_TOP_CLASS_VISIBLE,
-  BACK_TO_TOP_CLASS_HIDDEN } from './constants.js';
+  BACK_TO_TOP_CLASS_HIDDEN,
+} from './constants.js';
 
 let functions = {
-
   /**
    * @description Sets the visibility of the back to top button
    */
   setBacktotopVisibility: function() {
-    if (((window.innerHeight + window.pageYOffset) >= (BODY.offsetHeight/1.75)) &&
-      (!DRAWER.classList.contains('open'))) {
-      window.setTimeout( function() {
+    if (
+      window.innerHeight + window.pageYOffset >= BODY.offsetHeight / 1.75 &&
+      !DRAWER.classList.contains('open')
+    ) {
+      window.setTimeout(function() {
         BACK_TO_TOP.classList.remove(BACK_TO_TOP_CLASS_HIDDEN);
         BACK_TO_TOP.classList.add(BACK_TO_TOP_CLASS_VISIBLE);
       }, 100);
-
-    }
-    else {
-      window.setTimeout( function() {
+    } else {
+      window.setTimeout(function() {
         BACK_TO_TOP.classList.remove(BACK_TO_TOP_CLASS_VISIBLE);
         BACK_TO_TOP.classList.add(BACK_TO_TOP_CLASS_HIDDEN);
       }, 100);
@@ -39,8 +39,8 @@ let functions = {
    * @description Opens the side menu on smaller viewports
    */
   openMenu: function() {
-
-    const scrollYWidth = window.innerWidth - document.documentElement.clientWidth;
+    const scrollYWidth =
+      window.innerWidth - document.documentElement.clientWidth;
 
     DRAWER.classList.add('open');
     HAMBURGER_MENU.style.display = 'none';
@@ -56,12 +56,13 @@ let functions = {
   },
 
   /**
-    * @description Closes the side menu on smaller viewports
-    */
+   * @description Closes the side menu on smaller viewports
+   */
   closeMenu: function() {
-
-    let headerPaddingRight = HEADER.style.paddingRight === ''?'0':HEADER.style.paddingRight;
-    let mainPaddingRight = MAIN.style.paddingRight === ''?'0':MAIN.style.paddingRight;
+    let headerPaddingRight =
+      HEADER.style.paddingRight === '' ? '0' : HEADER.style.paddingRight;
+    let mainPaddingRight =
+      MAIN.style.paddingRight === '' ? '0' : MAIN.style.paddingRight;
 
     DRAWER.classList.remove('open');
     HAMBURGER_MENU.style.display = 'block';
@@ -74,7 +75,7 @@ let functions = {
     MAIN.style.paddingRight = `${mainPaddingRight}px`;
 
     functions.setBacktotopVisibility();
-  }
+  },
 };
 
 export { functions };

@@ -10,7 +10,7 @@
  *
  */
 
-@media screen and (min-width:300px) {
+@media screen and (min-width: 300px) {
   .scores-table {
     font-size: 1em;
   }
@@ -26,7 +26,7 @@
  *
  */
 
-@media screen and (min-width:350px) {
+@media screen and (min-width: 350px) {
   .news-title,
   .sports-title,
   .weather-title {
@@ -46,7 +46,7 @@
   }
 
   .weather-today-temp-deg {
-    font-size: 2.0em;
+    font-size: 2em;
   }
 }
 
@@ -56,7 +56,7 @@
  *
  */
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   .scores-table,
   .scores-table thead,
   .scores-table tbody,
@@ -116,7 +116,7 @@
  *
  */
 
-@media screen and (min-width:450px) {
+@media screen and (min-width: 450px) {
   .weather-next-item {
     font-size: 1.5em;
   }
@@ -144,7 +144,7 @@
  *
  */
 
-@media screen and (min-width:500px) {
+@media screen and (min-width: 500px) {
   .scores-table {
     font-size: 1.4em;
   }
@@ -156,7 +156,7 @@
  *
  */
 
-@media screen and (min-width:700px) {
+@media screen and (min-width: 700px) {
   /*Menu*/
   .hamburger,
   .x {
@@ -167,7 +167,7 @@
     position: sticky;
     top: 0;
     padding: 0;
-    font-size: 1.20em;
+    font-size: 1.2em;
   }
 
   .nav-item {
@@ -208,7 +208,7 @@
     display: table-cell;
   }
 
-  .scores-table td:nth-child(2){
+  .scores-table td:nth-child(2) {
     text-align: center;
   }
 
@@ -247,8 +247,7 @@
  *
  */
 
-@media screen and (min-width:900px) {
-
+@media screen and (min-width: 900px) {
   .scores {
     display: block;
     width: 60%;
@@ -293,7 +292,7 @@
  *
  */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
   .hamburger {
     position: fixed;
     z-index: 30;
@@ -316,9 +315,9 @@
   }
 
   nav {
-    position: fixed;    /* This trasform moves the drawer off canvas. */
+    position: fixed; /* This trasform moves the drawer off canvas. */
     -webkit-transform: translate(-800px, 0);
-    transform: translate(-800px, 0);    /* Optionally, we animate the drawer. */
+    transform: translate(-800px, 0); /* Optionally, we animate the drawer. */
     transition: transform 0.3s ease;
     height: 100%;
   }

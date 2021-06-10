@@ -5,10 +5,10 @@ import {
   HAMBURGER_MENU,
   X_MENU,
   MENU_ENTRIES,
-  BACK_TO_TOP } from './constants.js';
+  BACK_TO_TOP,
+} from './constants.js';
 
-window.onload=function(){
-
+window.onload = function() {
   /**
    *
    * Events
@@ -19,11 +19,9 @@ window.onload=function(){
    * @description Toggles the side menu
    */
   HAMBURGER_MENU.addEventListener('click', function(e) {
-
     if (!this.classList.contains('open')) {
       functions.openMenu();
-    }
-    else {
+    } else {
       functions.closeMenu();
     }
 
@@ -35,9 +33,9 @@ window.onload=function(){
    *
    */
 
-   //event ĺistener added for all elements which should close menu when clicked
+  //event ĺistener added for all elements which should close menu when clicked
   [HEADER, MAIN, X_MENU].forEach(item => {
-    item.addEventListener('click',  function() {
+    item.addEventListener('click', function() {
       functions.closeMenu();
     });
   });
@@ -63,7 +61,7 @@ window.onload=function(){
    *
    */
   BACK_TO_TOP.addEventListener('click', function() {
-    scroll(0,0);
+    scroll(0, 0);
   });
 
   /**
@@ -74,7 +72,6 @@ window.onload=function(){
     functions.setBacktotopVisibility();
   });
 
-
   /**
    *
    * Initial calls
@@ -82,5 +79,4 @@ window.onload=function(){
    */
 
   functions.setBacktotopVisibility();
-
 };
